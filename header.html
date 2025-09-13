@@ -8,61 +8,49 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        
+
         /* Header styling */
         header {
             background-color: #333;
             color: white;
-            padding: 5px;
+            padding: 20px;
         }
-        
-        /* Navigation menu */
-        nav {
-            padding: 5px;
-        }
-        .home {
-            position: absolute;
-            left: 20px;
-            top: 20px;
-            padding: -20px;
 
-        }
-        .eelse {
+        /* Navigation bar */
+        nav {
+            background-color: #444;
             display: flex;
-            gap: 20px;
-            padding: 5px;
+            align-items: center;
+            padding: 10px 20px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            padding: 5px ;
-            margin: 5px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
         }
-        
+
+        nav img {
+            width: 60px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
         nav a:hover {
             transform: scale(1.05);
-            transition: transform 0.3s ease, box-shadow 0.3 ease;
+            transition: transform 0.3s ease;
         }
-        
+
         /* Main content area */
         main {
             padding: 20px;
             min-height: 400px;
         }
-        img {
-            position: relative;
-            top: -10px;
-            width: 80px;
-            height: 95px;
-        }
+
         .text {
-            position: relative;
-            left: 145px;
-        }
-        .eelse:hover{
-            color: black;
-            transform: scale(1.05);
-            transition: transform 0.3s ease, box-shadow 0.3 ease;
+            margin: 0;
         }
     </style>
 </head>
@@ -73,22 +61,16 @@
         <h1 class="text">Buah-Buahan Tempatan</h1>
         <p class="text">Belajar Tentang Buah-Buahan Tempatan Di Malaysia!!</p>
     </header>
-    
-    <!-- NAVIGATION MENU -->
 
+    <!-- NAVIGATION MENU -->
     <nav>
-        <a class="home" img src="llogo.jpg" href="Main.html"><img src="llogo.jpg"></a>
-        <a class="eelse" href="redirects/durian.html">Durian</a>
-        <a class="eelse" href="redirects/manggis.html">Manggis</a>
-        <a class="eelse" href="redirects/rambutan.html">Rambutan</a>
+        <a href="Main.html">
+            <img src="llogo.jpg" alt="Logo">
+        </a>
+        <a href="redirects/durian.html">Durian</a>
+        <a href="redirects/manggis.html">Manggis</a>
+        <a href="redirects/rambutan.html">Rambutan</a>
     </nav>
-    
-    <!-- MAIN CONTENT -->
-    <main>
-        <h2>This is where your page content goes</h2>
-        <p>Replace this text with whatever you want on your page!</p>
-        <p>Add more paragraphs, images, or whatever content you need.</p>
-    </main>
-    
+
 </body>
 </html>

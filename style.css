@@ -9,6 +9,7 @@ h1, h2 {
     margin: 0;
     border-radius: 20px black;
     padding: 20px;
+    margin: 0;
   }
   h3 {
       color: #FFFDD0;
@@ -48,4 +49,5 @@ h1, h2 {
       height: auto;
       max-width: 300px;
       border-radius: 10px;
+      
   }
