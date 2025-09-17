@@ -1,37 +1,75 @@
-<html>
-    <head>
-        <title>Buah-buahan </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-        <body>
-            <div id="header-placeholder"></div>
-            <main>
-            <h1> Buah-Buahan Tempatan Di Malaysia!</h1>
-            <div class="grid">
-                    <div class="card" onclick="window.location.href='redirects/durian.html'" style="cursor: pointer;">
-                        <h3>Durian</h3>
-                        <img src="durian.jpg">
-                        <p class="cream">Durian digelar sebagai "Raja Buah-buahan tropika"</p>
-                    </div>
-                <div class="card" onclick="window.location.href='redirects/manggis.html'" style="cursor: pointer;">
-                    <h3>Manggis </h3>
-                    <img src="manggis.jpg">
-                    <p class="cream">Manggis digelar sebagai "Ratu buah-buahan tropika"</p>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buah-buahan Tempatan Malaysia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 0.5s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 2.5s;"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>🍇 Buah-Buahan Tempatan 🥭</h1>
+            <p>Jelajahi Kekayaan Buah-buahan Tropika Malaysia</p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="nav-container">
+            <a href="Main.html" class="nav-logo">
+                <img src="/llogo.jpg" alt="Logo">
+            </a>
+            <a href="redirects/durian.html" class="nav-link">Durian</a>
+            <a href="redirects/manggis.html" class="nav-link">Manggis</a>
+            <a href="redirects/rambutan.html" class="nav-link">Rambutan</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="grid">
+            <div class="card durian" onclick="window.location.href='redirects/durian.html'">
+                <h3>Durian</h3>
+                <div class="card-image">
+                    <img src="durian.jpg" alt="Durian - Raja Buah">
                 </div>
-                <div class="card" onclick="window.location.href='redirects/rambutan.html'" style="cursor: pointer;">
-                    <h3>Rambutan </h3>
-                    <img src="rambutan.jpeg">
-                    <p class="cream"> Rambutan sedap</p>
-                </div>
+                <p>Durian digelar sebagai <strong>"Raja Buah-buahan Tropika"</strong> - buah yang paling istimewa dan berperisa unik di Asia Tenggara</p>
             </div>
-            </main>
-            <script>
-    // Load header.html into #header-placeholder
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
-        </body>
+
+            <div class="card manggis" onclick="window.location.href='redirects/manggis.html'">
+                <h3>Manggis</h3>
+                <div class="card-image">
+                    <img src="manggis.jpg" alt="Manggis - Ratu Buah">
+                </div>
+                <p>Manggis digelar sebagai <strong>"Ratu Buah-buahan Tropika"</strong> - buah yang manis dan menyegarkan dengan khasiat tinggi</p>
+            </div>
+
+            <div class="card rambutan" onclick="window.location.href='redirects/rambutan.html'">
+                <h3>Rambutan</h3>
+                <div class="card-image">
+                    <img src="rambutan.jpeg" alt="Rambutan">
+                </div>
+                <p>Rambutan yang sedap dan manis, buah tempatan Malaysia yang penuh dengan vitamin dan sangat menyegarkan</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
